@@ -21,12 +21,15 @@
     
 }
 .Add-hand{
-    padding: 20px 40px;
+    padding: 20px 60px;
     border-radius: 15px;
     border: none;
-    width: 20vw;
+    width: 25vw;
     transition: background 0.2s ;
     position: relative;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
 }
 .Add-hand:hover{
     background: #ce8526;

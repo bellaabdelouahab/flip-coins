@@ -1,5 +1,5 @@
 
-document.querySelector('lottie-player ').addEventListener('click', function(e) {
+document.querySelector('.lottie-player').addEventListener('click', function(e) {
     if(e.target.__currentState == 'playing') {
         return;
     }
@@ -16,7 +16,7 @@ document.querySelector('lottie-player ').addEventListener('click', function(e) {
         e.target.stop();
         // lunch click event
         setTimeout(function() {
-        document.querySelector('lottie-player ').click()
+        document.querySelector('.lottie-player ').click()
         }, 100);
     }, 1300);
 })
