@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipper</title>
+</head>
+<body>
+    <lottie-player data-result="0"
+        src="https://assets9.lottiefiles.com/packages/lf20_1l9gpfir.json"  
+        background="transparent"  speed="1" 
+        style="width: 300px; height: 300px;"
+        loop
+    >
+    </lottie-player>
+    <style>
+        lottie-player {
+            margin: 0 auto;
+            display: block;
+            position: relative;
+        }
+        lottie-player::after {
+            content: attr(data-result);
+            color: rgb(47, 233, 47);
+            position: absolute;
+            top: 70%;
+            opacity: 0;
+            left: 60%;
+            /* use apper animation */
+            transition: top 0.2s ease-in-out, opacity 0.2s ease-in-out;
+            font-size: 1rem;
+            font-weight: 700;
+            display: block;
+        }
+        lottie-player.active::after {
+            top: 35%;
+            opacity: 0.5;
+        }
+        lottie-player.unactive::after {
+            display: none;
+        }
+        @keyframes upper {
+            0% {
+                opacity: 0.2;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</body>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="flipper.js"></script>
+</html>
