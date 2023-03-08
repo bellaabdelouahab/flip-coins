@@ -2,6 +2,58 @@
     width: 20vw;
     height: 100vh;
     border: solid 1px black;
-    /* margin-top: -10vh; */
-    background: #000;
+}
+
+.list_of_options {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #444;
+    border-radius: 20px;
+    margin-top: 4vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.option-btn {
+    width: 10%;
+    height: 2.6rem;
+    border: none;
+    border-radius: 10px;
+    padding: 0.2rem;
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 2.5rem;
+    position: relative; 
+    /* transition: 0.2s ease; */
+    
+}
+.option-btn:after {
+    content: "";
+    /* center the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0.7rem;
+    width:0;
+    height: 100%;
+    background: #48f321;
+    border-radius: 20px;
+    /* background: transparent; */
+    /* transition: all 400ms ease; */
+}
+
+.option-btn.active:after {
+    
+   
+    content: attr(data-content);
+    width: 100%;
+    left: 0;
+    /* background: transparent; */
+    transition: all 900ms ease;
+    
 }
