@@ -1,0 +1,7 @@
+.Game_area{
+    width: 100%;
+    height: 90%;
+    border: solid 1px black;
+    /* margin-left: 20vw; */
+    background: blue;
+}

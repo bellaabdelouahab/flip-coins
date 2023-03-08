@@ -1,0 +1,7 @@
+.pay_holder{
+    width: 20vw;
+    height: 100vh;
+    border: solid 1px black;
+    /* margin-top: -10vh; */
+    background: #000;
+}
