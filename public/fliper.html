@@ -7,7 +7,7 @@
     <title>Flipper</title>
 </head>
 <body>
-    <lottie-player 
+    <lottie-player data-result="0"
         src="https://assets9.lottiefiles.com/packages/lf20_1l9gpfir.json"  
         background="transparent"  speed="1" 
         style="width: 300px; height: 300px;"
@@ -21,7 +21,7 @@
             position: relative;
         }
         lottie-player::after {
-            content: "+1000 coins";
+            content: attr(data-result);
             color: rgb(47, 233, 47);
             position: absolute;
             top: 70%;

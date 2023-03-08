@@ -4,6 +4,9 @@ document.querySelector('lottie-player ').addEventListener('click', function(e) {
         return;
     }
     e.target.play();  
+    // set data-result
+    e.target.setAttribute('data-result',"+"+(Math.floor(Math.random() * 1000))+ " coins");
+    e.targer
     e.target.classList.add('active');
     e.target.classList.remove('inactive');
     
