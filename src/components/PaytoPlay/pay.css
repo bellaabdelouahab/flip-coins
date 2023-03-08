@@ -1,59 +1,40 @@
 .pay_holder{
-    width: 20vw;
+    min-width: 20vw;
     height: 100vh;
-    border: solid 1px black;
+    background: #a1a0a0;
 }
-
+.logo{
+    height: 20vh;
+    background: url("../../assets/logo.png") no-repeat center center/50%;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
 .list_of_options {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    
     background: #444;
-    border-radius: 20px;
+    border-radius: 5px;
     margin-top: 4vh;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    margin: 10px 5px;
+    padding: 10px ;
 }
 .option-btn {
-    width: 10%;
-    height: 2.6rem;
     border: none;
-    border-radius: 10px;
-    padding: 0.2rem;
+    border-radius: 5px;
+    padding: 0.7rem 2rem;
+    text-align: center;
     background: #444;
     color: #fff;
     cursor: pointer;
-    padding: 0 2.5rem;
     position: relative; 
-    /* transition: 0.2s ease; */
-    
+    transition: background 0.5s ease-in;
 }
-.option-btn:after {
-    content: "";
-    /* center the text */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0.7rem;
-    width:0;
-    height: 100%;
-    background: #48f321;
-    border-radius: 20px;
-    /* background: transparent; */
-    /* transition: all 400ms ease; */
-}
-
-.option-btn.active:after {
-    
-   
-    content: attr(data-content);
-    width: 100%;
-    left: 0;
-    /* background: transparent; */
-    transition: all 900ms ease;
-    
+.option-btn.active{
+    background: #000;
 }

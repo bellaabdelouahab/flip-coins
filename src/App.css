@@ -1,7 +1,10 @@
+
+
+
 .holder_components{
-    width: 100%;
+    width:20vw;
     max-height: max-content;
-    height: 100%;
+    height: max-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,5 +14,4 @@
 .second_componenet{
     width: 80vw;
     height: 100vh;
-    border: solid 1px black;
 }

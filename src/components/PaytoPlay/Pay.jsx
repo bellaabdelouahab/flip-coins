@@ -6,6 +6,7 @@ export default function Pay () {
 
   return (
     <div className='pay_holder'>
+        <div className='logo'></div>
         <div className="list_of_options">
             <button
             className="option-btn active"
