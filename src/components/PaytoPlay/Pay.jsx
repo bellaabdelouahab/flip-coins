@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import './pay.css'
 
 export default function Pay () {
-    const [content, setContent] = useState("project");
+    const [content, setContent] = useState("Upgrade");
 
   return (
     <div className='pay_holder'>
@@ -11,7 +11,7 @@ export default function Pay () {
             <button
             className="option-btn active"
             onClick={(e) => {
-                setContent("project");
+                setContent("Upgrade");
                 e.target.classList.add("active");
                 e.target.parentElement.children[1].classList.remove("active");
                 e.target.parentElement.children[2].classList.remove("active");
@@ -20,13 +20,13 @@ export default function Pay () {
             data-content="project"
             value={content}
             >
-            Project
+            Upgrade
             </button>
 
             <button
             className="option-btn"
             onClick={(e) =>{
-                setContent("skill");
+                setContent("magic trick");
                 e.target.classList.add("active");
                 e.target.parentElement.children[0].classList.remove("active");
                 e.target.parentElement.children[2].classList.remove("active");
@@ -35,7 +35,7 @@ export default function Pay () {
             data-content="skill"
             value={content}
             >
-            Skill
+            magic trick
             </button>
 
             <button
@@ -53,8 +53,8 @@ export default function Pay () {
             </button>
         </div>
         
-        {content === "project" ? <h1>hh</h1> : null}
-        {content === "skill" ? <h1>hh2</h1> : null}
+        {content === "Upgrade" ? <h1>hh</h1> : null}
+        {content === "magic trick" ? <h1>hh2</h1> : null}
         {content === "report" ? <h1>hh3</h1> : null}
     </div>
   )
