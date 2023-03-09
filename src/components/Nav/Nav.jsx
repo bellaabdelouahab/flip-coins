@@ -4,11 +4,11 @@ import coin_pic from '../../assets/cube_score.png'
 
 export default function Nav () {
   const [score, setScore] = useState(0);
-  
+
   return (
     <div className='nav_area'>
         <div className='nv-options'>
-          <button className='Add-hand'> Buy One More Hand</button>
+          <button className='Add-hand'> Need More Hands ? Buy Here !</button>
           </div>
         <div className='coins'>
           <div className='score'>
